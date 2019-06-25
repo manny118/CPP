@@ -1,0 +1,56 @@
+# depslib dependency file v1.0
+1561500336 source:e:\second year\semester 2\software development\review week done\music\main.cpp
+	<iostream>
+	"Song.h"
+	"Artist.h"
+	"Playlist.h"
+	"Band.h"
+	"SoloArtist.h"
+
+1561500290 e:\second year\semester 2\software development\review week done\music\include\song.h
+	<string>
+	"Artist.h"
+
+1561500230 e:\second year\semester 2\software development\review week done\music\include\artist.h
+	<string>
+
+1561500264 e:\second year\semester 2\software development\review week done\music\include\playlist.h
+	"Song.h"
+	<vector>
+	<stack>
+	<deque>
+
+1561500244 e:\second year\semester 2\software development\review week done\music\include\band.h
+	"Artist.h"
+	<vector>
+
+1561500278 e:\second year\semester 2\software development\review week done\music\include\soloartist.h
+	"Artist.h"
+
+1561500150 source:e:\second year\semester 2\software development\review week done\music\src\artist.cpp
+	"Artist.h"
+	<iostream>
+
+1561500338 source:e:\second year\semester 2\software development\review week done\music\src\band.cpp
+	"Band.h"
+	<iostream>
+
+1561499884 source:e:\second year\semester 2\software development\review week done\music\src\login.cpp
+	"Login.h"
+
+1561499884 e:\second year\semester 2\software development\review week done\music\include\login.h
+
+1561500010 source:e:\second year\semester 2\software development\review week done\music\src\soloartist.cpp
+	"SoloArtist.h"
+	<iostream>
+
+1561499992 source:e:\second year\semester 2\software development\review week done\music\src\song.cpp
+	"Song.h"
+	"string"
+	<iostream>
+
+1561500506 source:e:\second year\semester 2\software development\review week done\music\src\playlist.cpp
+	"Playlist.h"
+	<iostream>
+	"Song.h"
+
