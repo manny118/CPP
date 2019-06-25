@@ -1,0 +1,71 @@
+# depslib dependency file v1.0
+1556498174 source:e:\semester 2\software development\review week done\premiership\main.cpp
+	<iostream>
+	"Player.h"
+	"Club.h"
+	"Premiership.h"
+	"Login.h"
+
+1555174958 e:\semester 2\software development\review week done\premiership\include\player.h
+	"Person.h"
+	<string>
+
+1556444324 e:\semester 2\software development\review week done\premiership\include\person.h
+	<string>
+	<iostream>
+
+1556495866 e:\semester 2\software development\review week done\premiership\include\club.h
+	"Player.h"
+	"Manager.h"
+	<stack>
+	<queue>
+
+1556495770 e:\semester 2\software development\review week done\premiership\include\manager.h
+	<string>
+	"Person.h"
+
+1556495810 e:\semester 2\software development\review week done\premiership\include\premiership.h
+	"Club.h"
+	<vector>
+
+1556495752 e:\semester 2\software development\review week done\premiership\include\login.h
+	"Club.h"
+
+1556495698 source:e:\semester 2\software development\review week done\premiership\src\login.cpp
+	"Login.h"
+	<iostream>
+	"Club.h"
+	"Premiership.h"
+	<stdlib.h>
+	"windows.h"
+
+1556189042 source:e:\semester 2\software development\review week done\premiership\src\manager.cpp
+	"Manager.h"
+	<fstream>
+	<sstream>
+	<cstring>
+
+1556189060 source:e:\semester 2\software development\review week done\premiership\src\person.cpp
+	"Person.h"
+	"Player.h"
+
+1556189074 source:e:\semester 2\software development\review week done\premiership\src\player.cpp
+	"Player.h"
+	<fstream>
+	<sstream>
+	<cstring>
+
+1556495616 source:e:\semester 2\software development\review week done\premiership\src\premiership.cpp
+	"Premiership.h"
+	"Club.h"
+	<fstream>
+	<string.h>
+
+1556495870 source:e:\semester 2\software development\review week done\premiership\src\club.cpp
+	"Club.h"
+	<iostream>
+	<fstream>
+	<sstream>
+	<cstring>
+	<cstdlib>
+

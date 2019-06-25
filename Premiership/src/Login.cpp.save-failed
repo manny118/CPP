@@ -1,0 +1,76 @@
+#include "Login.h"
+#include <iostream>
+#include "Club.h"
+using namespace std;
+#include <stdlib.h>
+#include "windows.h"
+
+Login::Login()
+{
+    //ctor
+}
+
+void Login::addClub(){
+    string n;  int t,  no; Club *c; char in;
+    char check = 'y';
+    while(tolower(check) == 'y'){
+        cout << "Enter NAME,  TROPHIES_WON, NUMBER_OF_PLAYERS  " << endl;
+        cin >> n;
+        cin >> t;
+        cin >> no;
+        c = new Club(n, t, no);
+        cout << "Would you like to add a player? Enter [P] to add a player, [M] to add a manager or [X] to exit" << endl;
+        cin >> in;
+        if(tolower(in) == 'p'){
+            c->addPlayer();
+            c->saveClubDetails();
+            cout << "The details you entered have been saved." << endl;
+            refresh();
+        }
+        else if(tolower(in) == 'm'){
+            c->addManager();
+            c->saveClubDetails();
+            cout << "Manager detaiils saved!" << endl;
+            refresh();
+        }
+        else{
+            check = 'n';
+        }
+    }
+}
+
+
+void Login::homeScreen(){
+    char input; //char check = 'y';
+    cout << "Thank you for using our system today" << endl;
+    cout << "Please choose one of the following options: \n1. Enter [C] to register a club \n2. Enter [V] view club details \n3. Enter [X] To exit" << endl;
+    cin >> input;
+
+  //  while(tolower(check) == 'y'){
+        if(tolower(input) == 'c'){
+            addClub();
+            refresh();
+        }
+        else if(tolower(input) == 'v'){
+            Club *c;
+            c->viewClubDetails();
+            refresh();
+        }
+        else if(tolower(input) == 'x'){
+            cout << "\nBye for now" << endl;
+        }
+        else{
+            refresh();
+        }
+}
+
+void Login::refresh(){
+    Sleep(1500);
+    system("CLS");
+    homeScreen();
+}
+
+Login::~Login()
+{
+    //dtor
+}
